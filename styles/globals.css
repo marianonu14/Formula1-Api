@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  body{
+    @apply bg-[#ecf0f3] text-[#10151b] tracking-wide
+  }
+
+  h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl
+  }
+
+  h2 {
+    @apply text-3xl sm:text-4xl
+  }
+
+  li {
+    @apply cursor-pointer
+  }
+
+  button {
+    @apply uppercase border-2 bg-[#e10600] text-white rounded-xl p-3 md:p-5
+  }
+  input {
+    @apply p-4 rounded-lg focus:outline-none
+  }
+  textarea {
+    @apply p-4 rounded-xl text-lg resize-none focus:outline-none h-32
+  }
+  label {
+    @apply text-white text-xl
+  }
+}
