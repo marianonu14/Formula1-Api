@@ -2,12 +2,12 @@ import Navbar from "../components/Navbar";
 import Title from "../components/Title";
 
 
-const Main = () => {
+const Drivers = () => {
     return ( 
     <div>
         <Navbar />
-        <Title title={'Main'} />
+        <Title title={'Drivers'} />
     </div> );
 }
  
-export default Main;
+export default Drivers;
