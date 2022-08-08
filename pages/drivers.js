@@ -17,12 +17,13 @@ const Drivers = () => {
           })
       }, [])
 
-      const infoSeason = 'All The Drivers';
-      
+    
     return ( 
     <div>
         <Navbar />
-        <Title title={'Drivers'} info={infoSeason}/>
+        <div className="drivers-container banner" />
+        <Title title={'Drivers'}/>
+        <p className="text-center text-xl md:text-2xl p-10">All The Drivers</p>
         <div className="flex flex-col justify-evenly gap-5 px-10 pb-10">
             {seasonData.length > 0 ? 
             seasonData.map(elem => 
@@ -39,7 +40,9 @@ const Drivers = () => {
                 </div>
                 <a className="text-red-600" href={elem.url} target="_blank" rel="noreferrer">More Information +</a>
             </div>) : 
-            <Spinner />}
+            <div className="flex justify-center">
+                <Spinner />
+            </div>}
         </div>
     </div>)};
 

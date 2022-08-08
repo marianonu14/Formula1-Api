@@ -24,7 +24,7 @@ const Navbar = () => {
                     </a>
                 </Link>
                 <div>
-                    <ul className="hidden md:flex justify-evenly gap-5 text-lg text-white">
+                    <ul className="hidden md:flex justify-evenly gap-5 text-xl text-white">
                         <Link href="/season">
                             <li>Season</li>
                         </Link>
@@ -45,7 +45,7 @@ const Navbar = () => {
             </nav>
             <div className={navState ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70 ease-in duration-300" : undefined}>
             <div className={navState ? 
-                            "md:hidden fixed left-0 top-0 w-[75%] sm:w-[45%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-700" : 
+                            "md:hidden fixed left-0 top-0 w-[100%] sm:w-[45%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-700" : 
                             "md:hidden fixed left-[-100%] top-0 w-[75%] sm:w-[45%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"}>
                 <div className="flex justify-between item-center mb-10">
                 <Image src={formulaOneLogoRed}  alt='Formula One Logo' height={60} width={120}/>

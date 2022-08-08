@@ -21,7 +21,9 @@ const Season = () => {
     return ( 
     <div>
         <Navbar />
-        <Title title={'Seasons'} info={infoSeason}/>
+        <div className="season-container banner" />
+        <Title title={'Seasons'} />
+        <p className="text-center text-xl md:text-2xl p-10">{infoSeason}</p>
         <div className="flex flex-wrap justify-evenly gap-5 px-10 pb-10">
             {seasonData.length > 0 ? 
             seasonData.map(elem => 

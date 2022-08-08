@@ -41,10 +41,11 @@ const RaceSchedule = () => {
     return ( 
     <div>
         <Navbar />
-        <Title title={'Race Schedule'} />
+        <div className="race-container banner" />
+        <Title title={'Race Schedule'}  />
         <form onSubmit={handleYear} className="flex justify-center gap-2 md:gap-5 w-[90%] m-auto">
-            <input type="text" placeholder="Type Year" className="w-[75%]" onChange={handleValue} />
-            <button>Search</button>
+            <input type="text" placeholder="Type Year" className="w-[60%]" onChange={handleValue} />
+            <button className="md:w-1/5">Search</button>
         </form>
         <p className="text-center py-10 text-2xl font-bold">Schedule Year: <span className="text-red-600">{year}</span></p>
         <div className="flex flex-col justify-center items-center gap-5 px-10 pb-10">

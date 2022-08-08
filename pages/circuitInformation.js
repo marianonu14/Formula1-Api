@@ -22,6 +22,7 @@ const CircuitInformation = () => {
     return ( 
     <div>
         <Navbar />
+        <div className="circuit-container banner" />
         <Title title={'Circuit Information'}/>
         <div className="flex flex-col justify-evenly gap-5 px-10 pb-10 md:w-4/5 m-auto">
             {seasonData.length > 0 ? 
@@ -36,7 +37,9 @@ const CircuitInformation = () => {
                     <a className="text-red-600" href={elem.url} target="_blank" rel="noreferrer">More Information +</a>
                 </div>
             </div>) : 
-            <Spinner />}
+            <div className="flex justify-center">
+                <Spinner />
+            </div>}
         </div>
     </div>);
 }
