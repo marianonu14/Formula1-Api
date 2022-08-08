@@ -24,7 +24,7 @@ const CircuitInformation = () => {
         <Navbar />
         <div className="circuit-container banner" />
         <Title title={'Circuit Information'}/>
-        <div className="flex flex-col justify-evenly gap-5 px-10 pb-10 md:w-4/5 m-auto">
+        <div className="flex flex-col justify-evenly gap-5 px-10 pb-10 m-auto">
             {seasonData.length > 0 ? 
             seasonData.map(elem => 
             <div className="flex flex-col md:flex-row justify-between gap-5 p-5 text-xl border border-b-red-700" key={Math.random()}>

@@ -44,7 +44,7 @@ const RaceSchedule = () => {
         <div className="race-container banner" />
         <Title title={'Race Schedule'}  />
         <form onSubmit={handleYear} className="flex justify-center gap-2 md:gap-5 w-[90%] m-auto">
-            <input type="text" placeholder="Type Year" className="w-[60%]" onChange={handleValue} />
+            <input type="text" placeholder="Type Year" className="w-[60%] p-2 md:p-5" onChange={handleValue} />
             <button className="md:w-1/5">Search</button>
         </form>
         <p className="text-center py-10 text-2xl font-bold">Schedule Year: <span className="text-red-600">{year}</span></p>
