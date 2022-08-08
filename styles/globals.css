@@ -7,6 +7,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: 'Exo 2', sans-serif;
+}
+
 .main-container {
   background-image: linear-gradient(rgba(228, 174, 174, 0.685),rgb(0, 0, 0)), url(../public/bg_formula_1.jpeg);
   background-position: center;
