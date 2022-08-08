@@ -7,6 +7,7 @@ import formulaOneLogoRed from '../public/formulaone_logo.png'
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 
+
 const Navbar = () => {
     const [navState, setNavState] = useState(false);
 

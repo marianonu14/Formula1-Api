@@ -9,6 +9,7 @@ const RaceSchedule = () => {
     const [scheduleData, setScheduleData] = useState([])
     const [year, setYear] = useState()
     const [inputValue, setInputValue] = useState()
+    const [spinnerState, setSpinnerState] = useState(false)
    
     useEffect(( ) => {
         if (year){
@@ -16,6 +17,7 @@ const RaceSchedule = () => {
             .then(res => res.json())
             .then(response => {
               const data = response.MRData.RaceTable.Races;
+              setSpinnerState(false)
               setScheduleData(data)
             })
         } return
@@ -30,6 +32,7 @@ const RaceSchedule = () => {
 
       const handleYear = (e) => {
         e.preventDefault()
+        setSpinnerState(true)
         setYear(inputValue);
       }
 
@@ -58,6 +61,7 @@ const RaceSchedule = () => {
                     <a className="text-red-600" href={elem.url} target="_blank" rel="noreferrer">More Information +</a>
                 </div>
             </div>)}
+            {spinnerState && scheduleData.length === 0 && <Spinner />}
         </div>
     </div> );
 }
