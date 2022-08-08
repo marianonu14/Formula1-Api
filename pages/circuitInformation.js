@@ -10,7 +10,7 @@ const CircuitInformation = () => {
     const [seasonData, setseasonData] = useState([])
    
     useEffect(( ) => {
-        fetch(`http://ergast.com/api/f1/circuits.json?limit=100&offset=20`)
+        fetch(`https://ergast.com/api/f1/circuits.json?limit=100&offset=20`)
           .then(res => res.json())
           .then(response => {
             const data = response.MRData.CircuitTable.Circuits;

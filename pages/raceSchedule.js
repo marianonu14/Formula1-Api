@@ -36,8 +36,6 @@ const RaceSchedule = () => {
         setYear(inputValue);
       }
 
-      console.log(scheduleData);
-      console.log(year);
     return ( 
     <div>
         <Navbar />
