@@ -99,7 +99,7 @@ body {
 
 @layer base {
   body{
-    @apply bg-[#ecf0f3] text-[#10151b] tracking-wide
+    @apply bg-[#ecf0f3] text-[#161d25] tracking-wide
   }
 
   h1 {

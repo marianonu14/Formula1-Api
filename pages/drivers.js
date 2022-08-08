@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Image from "next/dist/client/image";
+import Head from "next/head";
 
 import Navbar from "../components/Navbar";
 import Title from "../components/Title";
@@ -20,6 +20,12 @@ const Drivers = () => {
     
     return ( 
     <div>
+        <Head>
+            <title>Formula 1 | Drivers</title>
+            <meta name="description" content="Formula 1 App, about history information" />
+            <link rel="icon" href="/favicon.ico" />
+            <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet" />
+        </Head>
         <Navbar />
         <div className="drivers-container banner" />
         <Title title={'Drivers'}/>
