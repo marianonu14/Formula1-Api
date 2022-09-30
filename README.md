@@ -4,12 +4,10 @@ Personal Project - This Web App provides a historical record of Formula One moto
 
 ## Technologies
 
-- ReactJS - NextJS
-- TailwindCSS
+- [NextJS](https://nextjs.org/).
+- [TailwindCSS](https://tailwindcss.com/).
 
 ## Available Scripts
-
-This project was bootstrapped with [Create React App](https://create-react-app.dev/).
 
 To install all the packages:
 
@@ -17,7 +15,7 @@ To install all the packages:
 
 In the project directory, you can run:
 
-- npm start
+- npm dev
 
 Runs the app in the development mode.
 Open http://localhost:3000 to view it in the browser.
