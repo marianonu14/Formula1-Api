@@ -9,7 +9,7 @@ Personal Project - This Web App provides a historical record of Formula One moto
 
 ## Available Scripts
 
-This project was bootstrapped with Create React App.
+This project was bootstrapped with [Create React App](https://create-react-app.dev/).
 
 To install all the packages:
 
